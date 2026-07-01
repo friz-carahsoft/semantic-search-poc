@@ -65,8 +65,7 @@ semantic-search-poc/
 |   ├── 3-sample-quotes-dataset.md
 │   └── 4-opensearch-index-setup.md
 ├── scripts/
-│   ├── create_sample_quotes_dataset.py
-│   └── create_quotes_index.py # created in this step
+│   └── create_sample_quotes_dataset.py
 └── requirements.txt
 ```
 
