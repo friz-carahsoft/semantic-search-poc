@@ -81,9 +81,10 @@ semantic-search-poc/
 │   ├── quotes.csv
 │   └── quotes.jsonl
 ├── docs/
-|   ├── opensearch-docker-setup.md
-|   ├── python-environment-setup.md
-│   └── semantic-search-poc.md
+|   ├── 0-semantic-search-poc.md 
+|   ├── 1-opensearch-docker-setup.md
+|   ├── 2-python-environment-setup.md
+│   └── 3-sample-quotes-dataset.md
 ├── scripts/
 │   └── create_sample_quotes_dataset.py
 └── requirements.txt

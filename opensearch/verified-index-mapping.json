@@ -1,0 +1,45 @@
+{
+  "quotes-v1": {
+    "mappings": {
+      "properties": {
+        "author": {
+          "type": "keyword"
+        },
+        "category": {
+          "type": "keyword"
+        },
+        "id": {
+          "type": "keyword"
+        },
+        "quote": {
+          "type": "text"
+        },
+        "quote_embedding": {
+          "type": "knn_vector",
+          "dimension": 384,
+          "method": {
+            "engine": "lucene",
+            "space_type": "cosinesimil",
+            "name": "hnsw",
+            "parameters": {
+              "ef_construction": 128,
+              "m": 16
+            }
+          }
+        },
+        "search_text": {
+          "type": "text"
+        },
+        "source": {
+          "type": "keyword"
+        },
+        "source_license": {
+          "type": "keyword"
+        },
+        "tags": {
+          "type": "keyword"
+        }
+      }
+    }
+  }
+}
