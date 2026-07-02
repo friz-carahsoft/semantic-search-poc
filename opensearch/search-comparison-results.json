@@ -1,0 +1,1072 @@
+{
+  "generated_at_utc": "2026-07-02T16:00:55.577734+00:00",
+  "index": "quotes-v1",
+  "document_count": 50,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_dimension": 384,
+  "text_field": "search_text",
+  "embedding_field": "quote_embedding",
+  "top_k": 5,
+  "candidate_k": 10,
+  "hybrid_pipeline": "quotes-hybrid-pipeline",
+  "hybrid_weights": {
+    "keyword": 0.5,
+    "semantic": 0.5
+  },
+  "comparisons": [
+    {
+      "query": "perseverance",
+      "keyword": [],
+      "semantic": [
+        {
+          "rank": 1,
+          "id": "quote-016",
+          "score": 0.67948216,
+          "quote": "Discovery is what happens when doubt and discipline agree to work together.",
+          "author": "Dr. Owen Fields",
+          "category": "science",
+          "tags": [
+            "discovery",
+            "doubt",
+            "discipline"
+          ]
+        },
+        {
+          "rank": 2,
+          "id": "quote-008",
+          "score": 0.67927414,
+          "quote": "Humility begins when certainty leaves enough room for wonder.",
+          "author": "Lena Cross",
+          "category": "philosophy",
+          "tags": [
+            "humility",
+            "wonder",
+            "certainty"
+          ]
+        },
+        {
+          "rank": 3,
+          "id": "quote-038",
+          "score": 0.6764947,
+          "quote": "A leader earns speed by first earning alignment.",
+          "author": "Monica Reed",
+          "category": "leadership",
+          "tags": [
+            "alignment",
+            "speed",
+            "execution"
+          ]
+        },
+        {
+          "rank": 4,
+          "id": "quote-032",
+          "score": 0.6665456,
+          "quote": "A team trusts a leader who explains the mountain before demanding the climb.",
+          "author": "Grace Porter",
+          "category": "leadership",
+          "tags": [
+            "teams",
+            "trust",
+            "clarity"
+          ]
+        },
+        {
+          "rank": 5,
+          "id": "quote-003",
+          "score": 0.6621696,
+          "quote": "Patience is not standing still; it is moving without surrendering to panic.",
+          "author": "Jonas Reed",
+          "category": "philosophy",
+          "tags": [
+            "patience",
+            "calm",
+            "discipline"
+          ]
+        }
+      ],
+      "hybrid": [
+        {
+          "rank": 1,
+          "id": "quote-016",
+          "score": 0.5,
+          "quote": "Discovery is what happens when doubt and discipline agree to work together.",
+          "author": "Dr. Owen Fields",
+          "category": "science",
+          "tags": [
+            "discovery",
+            "doubt",
+            "discipline"
+          ]
+        },
+        {
+          "rank": 2,
+          "id": "quote-008",
+          "score": 0.49399224,
+          "quote": "Humility begins when certainty leaves enough room for wonder.",
+          "author": "Lena Cross",
+          "category": "philosophy",
+          "tags": [
+            "humility",
+            "wonder",
+            "certainty"
+          ]
+        },
+        {
+          "rank": 3,
+          "id": "quote-038",
+          "score": 0.41372046,
+          "quote": "A leader earns speed by first earning alignment.",
+          "author": "Monica Reed",
+          "category": "leadership",
+          "tags": [
+            "alignment",
+            "speed",
+            "execution"
+          ]
+        },
+        {
+          "rank": 4,
+          "id": "quote-032",
+          "score": 0.1263836,
+          "quote": "A team trusts a leader who explains the mountain before demanding the climb.",
+          "author": "Grace Porter",
+          "category": "leadership",
+          "tags": [
+            "teams",
+            "trust",
+            "clarity"
+          ]
+        },
+        {
+          "rank": 5,
+          "id": "quote-003",
+          "score": 0.0005,
+          "quote": "Patience is not standing still; it is moving without surrendering to panic.",
+          "author": "Jonas Reed",
+          "category": "philosophy",
+          "tags": [
+            "patience",
+            "calm",
+            "discipline"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "quotes about never giving up",
+      "keyword": [
+        {
+          "rank": 1,
+          "id": "quote-010",
+          "score": 5.208684,
+          "quote": "Every boundary teaches us something about what we value.",
+          "author": "Clara Finch",
+          "category": "philosophy",
+          "tags": [
+            "boundaries",
+            "values",
+            "identity"
+          ]
+        },
+        {
+          "rank": 2,
+          "id": "quote-023",
+          "score": 4.8229194,
+          "quote": "Books let us borrow courage from people who never met us.",
+          "author": "Rowan Blake",
+          "category": "literature",
+          "tags": [
+            "books",
+            "courage",
+            "empathy"
+          ]
+        }
+      ],
+      "semantic": [
+        {
+          "rank": 1,
+          "id": "quote-023",
+          "score": 0.68386406,
+          "quote": "Books let us borrow courage from people who never met us.",
+          "author": "Rowan Blake",
+          "category": "literature",
+          "tags": [
+            "books",
+            "courage",
+            "empathy"
+          ]
+        },
+        {
+          "rank": 2,
+          "id": "quote-006",
+          "score": 0.6517372,
+          "quote": "We understand ourselves better when we stop treating every silence as empty.",
+          "author": "Iris Camden",
+          "category": "philosophy",
+          "tags": [
+            "silence",
+            "understanding",
+            "self-awareness"
+          ]
+        },
+        {
+          "rank": 3,
+          "id": "quote-008",
+          "score": 0.64898396,
+          "quote": "Humility begins when certainty leaves enough room for wonder.",
+          "author": "Lena Cross",
+          "category": "philosophy",
+          "tags": [
+            "humility",
+            "wonder",
+            "certainty"
+          ]
+        },
+        {
+          "rank": 4,
+          "id": "quote-003",
+          "score": 0.648229,
+          "quote": "Patience is not standing still; it is moving without surrendering to panic.",
+          "author": "Jonas Reed",
+          "category": "philosophy",
+          "tags": [
+            "patience",
+            "calm",
+            "discipline"
+          ]
+        },
+        {
+          "rank": 5,
+          "id": "quote-028",
+          "score": 0.63619983,
+          "quote": "The reader completes the journey the writer only begins.",
+          "author": "Sofia Lane",
+          "category": "literature",
+          "tags": [
+            "reader",
+            "writer",
+            "journey"
+          ]
+        }
+      ],
+      "hybrid": [
+        {
+          "rank": 1,
+          "id": "quote-023",
+          "score": 0.5005,
+          "quote": "Books let us borrow courage from people who never met us.",
+          "author": "Rowan Blake",
+          "category": "literature",
+          "tags": [
+            "books",
+            "courage",
+            "empathy"
+          ]
+        },
+        {
+          "rank": 2,
+          "id": "quote-010",
+          "score": 0.5,
+          "quote": "Every boundary teaches us something about what we value.",
+          "author": "Clara Finch",
+          "category": "philosophy",
+          "tags": [
+            "boundaries",
+            "values",
+            "identity"
+          ]
+        },
+        {
+          "rank": 3,
+          "id": "quote-006",
+          "score": 0.16298787,
+          "quote": "We understand ourselves better when we stop treating every silence as empty.",
+          "author": "Iris Camden",
+          "category": "philosophy",
+          "tags": [
+            "silence",
+            "understanding",
+            "self-awareness"
+          ]
+        },
+        {
+          "rank": 4,
+          "id": "quote-008",
+          "score": 0.13410607,
+          "quote": "Humility begins when certainty leaves enough room for wonder.",
+          "author": "Lena Cross",
+          "category": "philosophy",
+          "tags": [
+            "humility",
+            "wonder",
+            "certainty"
+          ]
+        },
+        {
+          "rank": 5,
+          "id": "quote-003",
+          "score": 0.12618658,
+          "quote": "Patience is not standing still; it is moving without surrendering to panic.",
+          "author": "Jonas Reed",
+          "category": "philosophy",
+          "tags": [
+            "patience",
+            "calm",
+            "discipline"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "curiosity and discovery",
+      "keyword": [
+        {
+          "rank": 1,
+          "id": "quote-016",
+          "score": 8.1839485,
+          "quote": "Discovery is what happens when doubt and discipline agree to work together.",
+          "author": "Dr. Owen Fields",
+          "category": "science",
+          "tags": [
+            "discovery",
+            "doubt",
+            "discipline"
+          ]
+        },
+        {
+          "rank": 2,
+          "id": "quote-014",
+          "score": 4.6506987,
+          "quote": "The universe rewards curiosity, but it does not grade on enthusiasm alone.",
+          "author": "Dr. Felix Grant",
+          "category": "science",
+          "tags": [
+            "curiosity",
+            "evidence",
+            "universe"
+          ]
+        },
+        {
+          "rank": 3,
+          "id": "quote-021",
+          "score": 3.5332499,
+          "quote": "A story is a bridge between what happened and what it meant.",
+          "author": "Julian West",
+          "category": "literature",
+          "tags": [
+            "story",
+            "meaning",
+            "memory"
+          ]
+        },
+        {
+          "rank": 4,
+          "id": "quote-044",
+          "score": 3.0916553,
+          "quote": "I bought a notebook for my plans, and now my plans are to buy more notebooks.",
+          "author": "Daisy Moore",
+          "category": "humor",
+          "tags": [
+            "notebooks",
+            "planning",
+            "habits"
+          ]
+        },
+        {
+          "rank": 5,
+          "id": "quote-002",
+          "score": 2.547772,
+          "quote": "The question that makes us uncomfortable is often the question that makes us grow.",
+          "author": "Mara Ellison",
+          "category": "philosophy",
+          "tags": [
+            "growth",
+            "curiosity",
+            "self-examination"
+          ]
+        }
+      ],
+      "semantic": [
+        {
+          "rank": 1,
+          "id": "quote-014",
+          "score": 0.7913811,
+          "quote": "The universe rewards curiosity, but it does not grade on enthusiasm alone.",
+          "author": "Dr. Felix Grant",
+          "category": "science",
+          "tags": [
+            "curiosity",
+            "evidence",
+            "universe"
+          ]
+        },
+        {
+          "rank": 2,
+          "id": "quote-016",
+          "score": 0.7546285,
+          "quote": "Discovery is what happens when doubt and discipline agree to work together.",
+          "author": "Dr. Owen Fields",
+          "category": "science",
+          "tags": [
+            "discovery",
+            "doubt",
+            "discipline"
+          ]
+        },
+        {
+          "rank": 3,
+          "id": "quote-011",
+          "score": 0.7507602,
+          "quote": "Science begins when wonder learns how to take notes.",
+          "author": "Dr. Mira Stone",
+          "category": "science",
+          "tags": [
+            "science",
+            "wonder",
+            "observation"
+          ]
+        },
+        {
+          "rank": 4,
+          "id": "quote-008",
+          "score": 0.68008757,
+          "quote": "Humility begins when certainty leaves enough room for wonder.",
+          "author": "Lena Cross",
+          "category": "philosophy",
+          "tags": [
+            "humility",
+            "wonder",
+            "certainty"
+          ]
+        },
+        {
+          "rank": 5,
+          "id": "quote-018",
+          "score": 0.66280675,
+          "quote": "A theory grows stronger when it survives the questions that were meant to break it.",
+          "author": "Dr. Helena Brooks",
+          "category": "science",
+          "tags": [
+            "theory",
+            "testing",
+            "strength"
+          ]
+        }
+      ],
+      "hybrid": [
+        {
+          "rank": 1,
+          "id": "quote-016",
+          "score": 0.85707635,
+          "quote": "Discovery is what happens when doubt and discipline agree to work together.",
+          "author": "Dr. Owen Fields",
+          "category": "science",
+          "tags": [
+            "discovery",
+            "doubt",
+            "discipline"
+          ]
+        },
+        {
+          "rank": 2,
+          "id": "quote-014",
+          "score": 0.68655616,
+          "quote": "The universe rewards curiosity, but it does not grade on enthusiasm alone.",
+          "author": "Dr. Felix Grant",
+          "category": "science",
+          "tags": [
+            "curiosity",
+            "evidence",
+            "universe"
+          ]
+        },
+        {
+          "rank": 3,
+          "id": "quote-011",
+          "score": 0.34203336,
+          "quote": "Science begins when wonder learns how to take notes.",
+          "author": "Dr. Mira Stone",
+          "category": "science",
+          "tags": [
+            "science",
+            "wonder",
+            "observation"
+          ]
+        },
+        {
+          "rank": 4,
+          "id": "quote-021",
+          "score": 0.08742433,
+          "quote": "A story is a bridge between what happened and what it meant.",
+          "author": "Julian West",
+          "category": "literature",
+          "tags": [
+            "story",
+            "meaning",
+            "memory"
+          ]
+        },
+        {
+          "rank": 5,
+          "id": "quote-008",
+          "score": 0.06720164,
+          "quote": "Humility begins when certainty leaves enough room for wonder.",
+          "author": "Lena Cross",
+          "category": "philosophy",
+          "tags": [
+            "humility",
+            "wonder",
+            "certainty"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "leading with humility",
+      "keyword": [
+        {
+          "rank": 1,
+          "id": "quote-008",
+          "score": 5.208684,
+          "quote": "Humility begins when certainty leaves enough room for wonder.",
+          "author": "Lena Cross",
+          "category": "philosophy",
+          "tags": [
+            "humility",
+            "wonder",
+            "certainty"
+          ]
+        },
+        {
+          "rank": 2,
+          "id": "quote-039",
+          "score": 4.2828736,
+          "quote": "Accountability is not blame; it is ownership with a calendar.",
+          "author": "Peter Cross",
+          "category": "leadership",
+          "tags": [
+            "accountability",
+            "ownership",
+            "execution"
+          ]
+        },
+        {
+          "rank": 3,
+          "id": "quote-050",
+          "score": 4.2828736,
+          "quote": "The cloud is just someone else's computer with better marketing.",
+          "author": "Riley Banks",
+          "category": "humor",
+          "tags": [
+            "cloud",
+            "technology",
+            "marketing"
+          ]
+        },
+        {
+          "rank": 4,
+          "id": "quote-007",
+          "score": 2.6999216,
+          "quote": "A wise person changes direction without pretending the old road was useless.",
+          "author": "Theo Marlow",
+          "category": "philosophy",
+          "tags": [
+            "change",
+            "wisdom",
+            "humility"
+          ]
+        }
+      ],
+      "semantic": [
+        {
+          "rank": 1,
+          "id": "quote-008",
+          "score": 0.77979374,
+          "quote": "Humility begins when certainty leaves enough room for wonder.",
+          "author": "Lena Cross",
+          "category": "philosophy",
+          "tags": [
+            "humility",
+            "wonder",
+            "certainty"
+          ]
+        },
+        {
+          "rank": 2,
+          "id": "quote-031",
+          "score": 0.7553817,
+          "quote": "Leadership is the decision to carry responsibility before carrying authority.",
+          "author": "Evan Brooks",
+          "category": "leadership",
+          "tags": [
+            "responsibility",
+            "authority",
+            "leadership"
+          ]
+        },
+        {
+          "rank": 3,
+          "id": "quote-033",
+          "score": 0.7282952,
+          "quote": "The strongest leaders make the next decision easier for everyone else.",
+          "author": "Nathan Brooks",
+          "category": "leadership",
+          "tags": [
+            "decisions",
+            "clarity",
+            "service"
+          ]
+        },
+        {
+          "rank": 4,
+          "id": "quote-036",
+          "score": 0.7147614,
+          "quote": "The best leaders protect the room where honest feedback can survive.",
+          "author": "Leah Bennett",
+          "category": "leadership",
+          "tags": [
+            "feedback",
+            "trust",
+            "culture"
+          ]
+        },
+        {
+          "rank": 5,
+          "id": "quote-038",
+          "score": 0.7081821,
+          "quote": "A leader earns speed by first earning alignment.",
+          "author": "Monica Reed",
+          "category": "leadership",
+          "tags": [
+            "alignment",
+            "speed",
+            "execution"
+          ]
+        }
+      ],
+      "hybrid": [
+        {
+          "rank": 1,
+          "id": "quote-008",
+          "score": 1.0,
+          "quote": "Humility begins when certainty leaves enough room for wonder.",
+          "author": "Lena Cross",
+          "category": "philosophy",
+          "tags": [
+            "humility",
+            "wonder",
+            "certainty"
+          ]
+        },
+        {
+          "rank": 2,
+          "id": "quote-031",
+          "score": 0.3295526,
+          "quote": "Leadership is the decision to carry responsibility before carrying authority.",
+          "author": "Evan Brooks",
+          "category": "leadership",
+          "tags": [
+            "responsibility",
+            "authority",
+            "leadership"
+          ]
+        },
+        {
+          "rank": 3,
+          "id": "quote-050",
+          "score": 0.31548464,
+          "quote": "The cloud is just someone else's computer with better marketing.",
+          "author": "Riley Banks",
+          "category": "humor",
+          "tags": [
+            "cloud",
+            "technology",
+            "marketing"
+          ]
+        },
+        {
+          "rank": 4,
+          "id": "quote-039",
+          "score": 0.31548464,
+          "quote": "Accountability is not blame; it is ownership with a calendar.",
+          "author": "Peter Cross",
+          "category": "leadership",
+          "tags": [
+            "accountability",
+            "ownership",
+            "execution"
+          ]
+        },
+        {
+          "rank": 5,
+          "id": "quote-033",
+          "score": 0.14043185,
+          "quote": "The strongest leaders make the next decision easier for everyone else.",
+          "author": "Nathan Brooks",
+          "category": "leadership",
+          "tags": [
+            "decisions",
+            "clarity",
+            "service"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "finding humor in mistakes",
+      "keyword": [
+        {
+          "rank": 1,
+          "id": "quote-041",
+          "score": 4.6506987,
+          "quote": "My calendar has a sense of humor, but it mostly writes tragedies.",
+          "author": "Leo Finch",
+          "category": "humor",
+          "tags": [
+            "calendar",
+            "work",
+            "time"
+          ]
+        },
+        {
+          "rank": 2,
+          "id": "quote-049",
+          "score": 3.9574037,
+          "quote": "I enjoy multitasking because it lets me be confused in several directions at once.",
+          "author": "Frankie Cole",
+          "category": "humor",
+          "tags": [
+            "multitasking",
+            "confusion",
+            "productivity"
+          ]
+        },
+        {
+          "rank": 3,
+          "id": "quote-022",
+          "score": 3.5921865,
+          "quote": "The right sentence can open a window in a room we thought had no air.",
+          "author": "Amelia Hart",
+          "category": "literature",
+          "tags": [
+            "writing",
+            "language",
+            "hope"
+          ]
+        },
+        {
+          "rank": 4,
+          "id": "quote-043",
+          "score": 1.5374563,
+          "quote": "Coffee is proof that beans understand project deadlines.",
+          "author": "Maxwell Grant",
+          "category": "humor",
+          "tags": [
+            "coffee",
+            "deadlines",
+            "work"
+          ]
+        },
+        {
+          "rank": 5,
+          "id": "quote-045",
+          "score": 1.5374563,
+          "quote": "The printer only jams when it senses confidence.",
+          "author": "Harvey Miles",
+          "category": "humor",
+          "tags": [
+            "printer",
+            "office",
+            "technology"
+          ]
+        }
+      ],
+      "semantic": [
+        {
+          "rank": 1,
+          "id": "quote-041",
+          "score": 0.6813543,
+          "quote": "My calendar has a sense of humor, but it mostly writes tragedies.",
+          "author": "Leo Finch",
+          "category": "humor",
+          "tags": [
+            "calendar",
+            "work",
+            "time"
+          ]
+        },
+        {
+          "rank": 2,
+          "id": "quote-004",
+          "score": 0.6218298,
+          "quote": "Meaning is rarely discovered by accident; it is assembled through attention.",
+          "author": "Nadia Vale",
+          "category": "philosophy",
+          "tags": [
+            "meaning",
+            "attention",
+            "purpose"
+          ]
+        },
+        {
+          "rank": 3,
+          "id": "quote-030",
+          "score": 0.62009823,
+          "quote": "A library is a quiet argument against despair.",
+          "author": "Nora Quinn",
+          "category": "literature",
+          "tags": [
+            "library",
+            "hope",
+            "knowledge"
+          ]
+        },
+        {
+          "rank": 4,
+          "id": "quote-007",
+          "score": 0.60823804,
+          "quote": "A wise person changes direction without pretending the old road was useless.",
+          "author": "Theo Marlow",
+          "category": "philosophy",
+          "tags": [
+            "change",
+            "wisdom",
+            "humility"
+          ]
+        },
+        {
+          "rank": 5,
+          "id": "quote-001",
+          "score": 0.60565436,
+          "quote": "A quiet mind can hear the lesson hidden inside a difficult day.",
+          "author": "Elias North",
+          "category": "philosophy",
+          "tags": [
+            "reflection",
+            "resilience",
+            "wisdom"
+          ]
+        }
+      ],
+      "hybrid": [
+        {
+          "rank": 1,
+          "id": "quote-041",
+          "score": 1.0,
+          "quote": "My calendar has a sense of humor, but it mostly writes tragedies.",
+          "author": "Leo Finch",
+          "category": "humor",
+          "tags": [
+            "calendar",
+            "work",
+            "time"
+          ]
+        },
+        {
+          "rank": 2,
+          "id": "quote-049",
+          "score": 0.38865387,
+          "quote": "I enjoy multitasking because it lets me be confused in several directions at once.",
+          "author": "Frankie Cole",
+          "category": "humor",
+          "tags": [
+            "multitasking",
+            "confusion",
+            "productivity"
+          ]
+        },
+        {
+          "rank": 3,
+          "id": "quote-022",
+          "score": 0.32999843,
+          "quote": "The right sentence can open a window in a room we thought had no air.",
+          "author": "Amelia Hart",
+          "category": "literature",
+          "tags": [
+            "writing",
+            "language",
+            "hope"
+          ]
+        },
+        {
+          "rank": 4,
+          "id": "quote-004",
+          "score": 0.10683927,
+          "quote": "Meaning is rarely discovered by accident; it is assembled through attention.",
+          "author": "Nadia Vale",
+          "category": "philosophy",
+          "tags": [
+            "meaning",
+            "attention",
+            "purpose"
+          ]
+        },
+        {
+          "rank": 5,
+          "id": "quote-030",
+          "score": 0.09540217,
+          "quote": "A library is a quiet argument against despair.",
+          "author": "Nora Quinn",
+          "category": "literature",
+          "tags": [
+            "library",
+            "hope",
+            "knowledge"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "learning from failure",
+      "keyword": [
+        {
+          "rank": 1,
+          "id": "quote-023",
+          "score": 4.8229194,
+          "quote": "Books let us borrow courage from people who never met us.",
+          "author": "Rowan Blake",
+          "category": "literature",
+          "tags": [
+            "books",
+            "courage",
+            "empathy"
+          ]
+        }
+      ],
+      "semantic": [
+        {
+          "rank": 1,
+          "id": "quote-016",
+          "score": 0.6776624,
+          "quote": "Discovery is what happens when doubt and discipline agree to work together.",
+          "author": "Dr. Owen Fields",
+          "category": "science",
+          "tags": [
+            "discovery",
+            "doubt",
+            "discipline"
+          ]
+        },
+        {
+          "rank": 2,
+          "id": "quote-001",
+          "score": 0.65383565,
+          "quote": "A quiet mind can hear the lesson hidden inside a difficult day.",
+          "author": "Elias North",
+          "category": "philosophy",
+          "tags": [
+            "reflection",
+            "resilience",
+            "wisdom"
+          ]
+        },
+        {
+          "rank": 3,
+          "id": "quote-010",
+          "score": 0.6508424,
+          "quote": "Every boundary teaches us something about what we value.",
+          "author": "Clara Finch",
+          "category": "philosophy",
+          "tags": [
+            "boundaries",
+            "values",
+            "identity"
+          ]
+        },
+        {
+          "rank": 4,
+          "id": "quote-008",
+          "score": 0.6493588,
+          "quote": "Humility begins when certainty leaves enough room for wonder.",
+          "author": "Lena Cross",
+          "category": "philosophy",
+          "tags": [
+            "humility",
+            "wonder",
+            "certainty"
+          ]
+        },
+        {
+          "rank": 5,
+          "id": "quote-024",
+          "score": 0.6394415,
+          "quote": "A character becomes real when their weakness starts telling the truth.",
+          "author": "Elena Frost",
+          "category": "literature",
+          "tags": [
+            "characters",
+            "truth",
+            "weakness"
+          ]
+        }
+      ],
+      "hybrid": [
+        {
+          "rank": 1,
+          "id": "quote-023",
+          "score": 0.5,
+          "quote": "Books let us borrow courage from people who never met us.",
+          "author": "Rowan Blake",
+          "category": "literature",
+          "tags": [
+            "books",
+            "courage",
+            "empathy"
+          ]
+        },
+        {
+          "rank": 2,
+          "id": "quote-016",
+          "score": 0.5,
+          "quote": "Discovery is what happens when doubt and discipline agree to work together.",
+          "author": "Dr. Owen Fields",
+          "category": "science",
+          "tags": [
+            "discovery",
+            "doubt",
+            "discipline"
+          ]
+        },
+        {
+          "rank": 3,
+          "id": "quote-001",
+          "score": 0.18830235,
+          "quote": "A quiet mind can hear the lesson hidden inside a difficult day.",
+          "author": "Elias North",
+          "category": "philosophy",
+          "tags": [
+            "reflection",
+            "resilience",
+            "wisdom"
+          ]
+        },
+        {
+          "rank": 4,
+          "id": "quote-010",
+          "score": 0.14914541,
+          "quote": "Every boundary teaches us something about what we value.",
+          "author": "Clara Finch",
+          "category": "philosophy",
+          "tags": [
+            "boundaries",
+            "values",
+            "identity"
+          ]
+        },
+        {
+          "rank": 5,
+          "id": "quote-008",
+          "score": 0.12973692,
+          "quote": "Humility begins when certainty leaves enough room for wonder.",
+          "author": "Lena Cross",
+          "category": "philosophy",
+          "tags": [
+            "humility",
+            "wonder",
+            "certainty"
+          ]
+        }
+      ]
+    }
+  ]
+}

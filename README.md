@@ -28,23 +28,24 @@ may match quotes about persistence, resilience, effort, endurance, or courage ev
 | Semantic search | Vector similarity based on meaning | Finds conceptually similar content even with different wording | Results can feel less obvious; requires embeddings and vector indexing |
 | Hybrid search | Combines keyword and semantic signals | Often produces better relevance than either method alone | Requires scoring/tuning decisions |
 
-## What We Want to Learn
+## What We Wanted to Learn
 
 ### Business learning goals
 
-This POC is intended to help the team evaluate whether semantic search can improve discovery when users do not know the exact words contained in the source content.
+This POC was intended to help the team evaluate whether semantic search can improve discovery when users do not know the exact words contained in the source content.
 
 Key business questions:
 
 - Can semantic search return useful results when users search by concept instead of exact wording?
 - Where does semantic search improve the user experience compared with keyword-only search?
 - Where does keyword search still perform better, especially for exact terms, categories, names, or identifiers?
+- Does hybrid search provide a better default approach for general-purpose search?
 - What types of content are good candidates for vector search?
 - What would be required to explain, test, tune, and support semantic-search behavior in a real application?
 
 ### Technical learning goals
 
-This POC walks through the core technical workflow required to build a semantic-search pipeline.
+This POC walked through the core technical workflow required to build a semantic-search pipeline.
 
 Key technical questions:
 
@@ -55,13 +56,14 @@ Key technical questions:
 - How do we bulk index documents that include both text metadata and embeddings?
 - How do we convert user queries into embeddings at search time?
 - How do k-NN vector queries behave compared with keyword queries?
-- What files, scripts, and validation steps are useful for a reproducible team POC?
+- How do we compare keyword, semantic, and hybrid search results?
+- How should we document production guidance for choosing between search approaches?
 
 ## POC Summary
 
 This project uses a small synthetic quotes dataset to demonstrate semantic search end to end. The dataset is intentionally small so the team can inspect the source data, generated embeddings, bulk indexing format, and search results without needing a large infrastructure setup.
 
-The current implementation uses:
+The completed implementation uses:
 
 - OpenSearch running locally in Docker
 - Python virtual environment for repeatable local execution
@@ -70,6 +72,10 @@ The current implementation uses:
 - A synthetic quotes dataset with categories and metadata
 - A vector-enabled OpenSearch index named `quotes-v1`
 - k-NN search against indexed quote embeddings
+- Keyword search for exact/analyzed text matching
+- Hybrid search combining keyword and semantic signals
+- Search comparison and tuning outputs for relevance review
+- Production guidance notes for when each search approach should be used
 
 ## Repository Guide
 
@@ -85,8 +91,10 @@ The step-by-step documentation lives in the `docs/` folder:
 | 5 | [`docs/5-generate-quote-embeddings.md`](docs/5-generate-quote-embeddings.md) | Generate quote embeddings and prepare bulk indexing files |
 | 6 | [`docs/6-bulk-index-quotes.md`](docs/6-bulk-index-quotes.md) | Bulk index embedded quote documents into OpenSearch |
 | 7 | [`docs/7-semantic-search-quotes.md`](docs/7-semantic-search-quotes.md) | Run semantic search queries against indexed vectors |
+| 8 | [`docs/8-compare-search-methods.md`](docs/8-compare-search-methods.md) | Compare keyword, semantic, and hybrid search results |
+| 9 | [`docs/9-review-search-quality-and-tuning.md`](docs/9-review-search-quality-and-tuning.md) | Review search quality, tune hybrid weights, and document production guidance |
 
-## What Has Been Accomplished So Far
+## What Has Been Accomplished
 
 ### Step 1: OpenSearch Docker setup
 
@@ -140,48 +148,51 @@ The step-by-step documentation lives in the `docs/` folder:
 - Saved sample results to `opensearch/semantic-search-results.json`.
 - Confirmed the POC can retrieve quote records by meaning rather than only exact keyword matches.
 
-## What Remains
-
 ### Step 8: Compare keyword, semantic, and hybrid search
 
-The next step is to compare search approaches side by side.
+- Added side-by-side comparison of keyword, semantic, and hybrid search methods.
+- Ran the same test queries through each search approach.
+- Created an OpenSearch hybrid-search pipeline for score normalization and combination.
+- Generated comparison outputs for reviewing result differences across methods.
+- Documented where keyword search, semantic search, and hybrid search each performed well.
 
-This should include:
+### Step 9: Review search quality and tune hybrid behavior
 
-- Running the same queries as keyword search.
-- Running the same queries as semantic vector search.
-- Adding a basic hybrid search approach.
-- Comparing result quality for each method.
-- Documenting where each approach works well or poorly.
+- Reviewed search quality results from the Step 8 comparison.
+- Applied a simple relevance scoring rubric to evaluate result usefulness.
+- Tested multiple hybrid weight combinations to understand ranking impact.
+- Generated tuning and review artifacts for documenting search behavior.
+- Created production guidance for when to favor keyword, semantic, or hybrid search.
 
-This is the most important next learning step because it turns the technical build into practical relevance evaluation.
+## POC Completion Status
 
-### Possible follow-up steps
+Steps 1 through 9 are complete.
 
-After Step 8, useful next steps may include:
-
-- Tuning hybrid scoring and result ranking.
-- Adding more test queries and expected-result notes.
-- Creating a small relevance evaluation worksheet or JSON file.
-- Adding a simple API endpoint for search.
-- Adding a lightweight UI for demo purposes.
-- Testing with a larger or more realistic business dataset.
-- Documenting production considerations such as model selection, index lifecycle, reindexing, monitoring, security, and cost.
-
-## Current Project Status
-
-Steps 1 through 7 are complete.
-
-The project can now:
+The project now demonstrates a complete semantic-search workflow:
 
 1. run OpenSearch locally,
 2. create a vector-enabled index,
 3. generate sample quote data,
-4. generate embeddings,
-5. bulk index embedded documents, and
-6. run semantic k-NN searches against those indexed vectors.
+4. generate document embeddings,
+5. bulk index embedded documents,
+6. run semantic k-NN searches,
+7. compare keyword, semantic, and hybrid search,
+8. review relevance quality, and
+9. document production guidance.
 
-Next, the project will compare keyword search, semantic search, and hybrid search so the team can evaluate practical relevance differences.
+This POC is complete as a learning-oriented implementation. It demonstrates the end-to-end mechanics and gives the team a practical foundation for discussing production architecture, search relevance, model selection, indexing strategy, and user experience.
+
+## Recommended Conclusions
+
+The main conclusion from this POC is that semantic search should not be viewed as a simple replacement for keyword search.
+
+A practical production implementation will likely need all three approaches:
+
+- **Keyword search** for exact terms, identifiers, names, categories, codes, and highly specific values.
+- **Semantic search** for concept-based queries where meaning matters more than exact wording.
+- **Hybrid search** as a strong general-purpose default when both exact matching and meaning-based discovery are valuable.
+
+Hybrid search is often the best default candidate for enterprise search because it preserves the strengths of keyword search while adding semantic recall for queries that use different wording than the indexed content.
 
 ## Suggested Starting Point for New Team Members
 
@@ -196,6 +207,21 @@ docs/4-opensearch-index-setup.md
 docs/5-generate-quote-embeddings.md
 docs/6-bulk-index-quotes.md
 docs/7-semantic-search-quotes.md
+docs/8-compare-search-methods.md
+docs/9-review-search-quality-and-tuning.md
 ```
 
 Each step builds on the previous one, so the recommended path is to complete them sequentially.
+
+## Possible Next Steps Beyond This POC
+
+Although the POC is complete, useful follow-up work may include:
+
+- Testing with a larger or more realistic business dataset.
+- Defining a formal relevance evaluation set with expected results.
+- Adding a simple API endpoint for search.
+- Adding a lightweight UI for demo purposes.
+- Testing OpenSearch vector search with production-like document volumes.
+- Evaluating production embedding platforms (e.g. we would not use `all-MiniLM-L6-v2`).
+- Documenting model governance, reindexing strategy, monitoring, security, and cost considerations.
+- Exploring reranking, query rewriting, and relevance feedback for improved search quality.
