@@ -1,0 +1,46 @@
+> python scripts/semantic_search_quotes.py "how to keep going when work is hard"
+OpenSearch host: https://localhost:9200
+OpenSearch index: quotes-v1
+Embedding model: all-MiniLM-L6-v2
+Embedding dimension: 384
+Embedding field: quote_embedding
+Connected to OpenSearch: 3.7.0
+Loading embedding model...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 103/103 [00:00<00:00, 20136.73it/s]
+
+================================================================================
+Query: how to keep going when work is hard
+================================================================================
+
+1. A clear mission turns busy work into forward motion.
+   Author: Derek Shaw
+   Category: leadership
+   Tags: mission, focus, execution
+   Score: 0.656129
+
+2. Patience is not standing still; it is moving without surrendering to panic.
+   Author: Jonas Reed
+   Category: philosophy
+   Tags: patience, calm, discipline
+   Score: 0.639309
+
+3. I enjoy multitasking because it lets me be confused in several directions at once.
+   Author: Frankie Cole
+   Category: humor
+   Tags: multitasking, confusion, productivity
+   Score: 0.626189
+
+4. A leader earns speed by first earning alignment.
+   Author: Monica Reed
+   Category: leadership
+   Tags: alignment, speed, execution
+   Score: 0.606375
+
+5. The reader completes the journey the writer only begins.
+   Author: Sofia Lane
+   Category: literature
+   Tags: reader, writer, journey
+   Score: 0.601234
+
+Wrote semantic-search results: opensearch/semantic-search-results.json

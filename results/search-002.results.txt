@@ -1,0 +1,182 @@
+> python scripts/semantic_search_quotes.py --demo
+OpenSearch host: https://localhost:9200
+OpenSearch index: quotes-v1
+Embedding model: all-MiniLM-L6-v2
+Embedding dimension: 384
+Embedding field: quote_embedding
+Connected to OpenSearch: 3.7.0
+Loading embedding model...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 103/103 [00:00<00:00, 19234.79it/s]
+
+================================================================================
+Query: quotes about not giving up
+================================================================================
+
+1. Patience is not standing still; it is moving without surrendering to panic.
+   Author: Jonas Reed
+   Category: philosophy
+   Tags: patience, calm, discipline
+   Score: 0.670963
+
+2. Humility begins when certainty leaves enough room for wonder.
+   Author: Lena Cross
+   Category: philosophy
+   Tags: humility, wonder, certainty
+   Score: 0.652580
+
+3. We understand ourselves better when we stop treating every silence as empty.
+   Author: Iris Camden
+   Category: philosophy
+   Tags: silence, understanding, self-awareness
+   Score: 0.650750
+
+4. Books let us borrow courage from people who never met us.
+   Author: Rowan Blake
+   Category: literature
+   Tags: books, courage, empathy
+   Score: 0.647905
+
+5. A character becomes real when their weakness starts telling the truth.
+   Author: Elena Frost
+   Category: literature
+   Tags: characters, truth, weakness
+   Score: 0.628978
+
+================================================================================
+Query: quotes about curiosity and discovery
+================================================================================
+
+1. The universe rewards curiosity, but it does not grade on enthusiasm alone.
+   Author: Dr. Felix Grant
+   Category: science
+   Tags: curiosity, evidence, universe
+   Score: 0.758687
+
+2. Science begins when wonder learns how to take notes.
+   Author: Dr. Mira Stone
+   Category: science
+   Tags: science, wonder, observation
+   Score: 0.729207
+
+3. Discovery is what happens when doubt and discipline agree to work together.
+   Author: Dr. Owen Fields
+   Category: science
+   Tags: discovery, doubt, discipline
+   Score: 0.711140
+
+4. Humility begins when certainty leaves enough room for wonder.
+   Author: Lena Cross
+   Category: philosophy
+   Tags: humility, wonder, certainty
+   Score: 0.695612
+
+5. Books let us borrow courage from people who never met us.
+   Author: Rowan Blake
+   Category: literature
+   Tags: books, courage, empathy
+   Score: 0.693865
+
+================================================================================
+Query: quotes about wise choices
+================================================================================
+
+1. A wise person changes direction without pretending the old road was useless.
+   Author: Theo Marlow
+   Category: philosophy
+   Tags: change, wisdom, humility
+   Score: 0.708448
+
+2. The smallest honest choice can redirect the shape of an entire life.
+   Author: Caleb Rowan
+   Category: philosophy
+   Tags: integrity, choice, life
+   Score: 0.692571
+
+3. The strongest leaders make the next decision easier for everyone else.
+   Author: Nathan Brooks
+   Category: leadership
+   Tags: decisions, clarity, service
+   Score: 0.684921
+
+4. Books let us borrow courage from people who never met us.
+   Author: Rowan Blake
+   Category: literature
+   Tags: books, courage, empathy
+   Score: 0.680770
+
+5. Every boundary teaches us something about what we value.
+   Author: Clara Finch
+   Category: philosophy
+   Tags: boundaries, values, identity
+   Score: 0.659931
+
+================================================================================
+Query: quotes about courageous leadership
+================================================================================
+
+1. Books let us borrow courage from people who never met us.
+   Author: Rowan Blake
+   Category: literature
+   Tags: books, courage, empathy
+   Score: 0.727558
+
+2. The strongest leaders make the next decision easier for everyone else.
+   Author: Nathan Brooks
+   Category: leadership
+   Tags: decisions, clarity, service
+   Score: 0.724990
+
+3. Leadership is the decision to carry responsibility before carrying authority.
+   Author: Evan Brooks
+   Category: leadership
+   Tags: responsibility, authority, leadership
+   Score: 0.724135
+
+4. The best leaders protect the room where honest feedback can survive.
+   Author: Leah Bennett
+   Category: leadership
+   Tags: feedback, trust, culture
+   Score: 0.690771
+
+5. A team trusts a leader who explains the mountain before demanding the climb.
+   Author: Grace Porter
+   Category: leadership
+   Tags: teams, trust, clarity
+   Score: 0.660300
+
+================================================================================
+Query: funny quotes about mistakes
+================================================================================
+
+1. My calendar has a sense of humor, but it mostly writes tragedies.
+   Author: Leo Finch
+   Category: humor
+   Tags: calendar, work, time
+   Score: 0.647261
+
+2. A wise person changes direction without pretending the old road was useless.
+   Author: Theo Marlow
+   Category: philosophy
+   Tags: change, wisdom, humility
+   Score: 0.636178
+
+3. A quiet mind can hear the lesson hidden inside a difficult day.
+   Author: Elias North
+   Category: philosophy
+   Tags: reflection, resilience, wisdom
+   Score: 0.630436
+
+4. A library is a quiet argument against despair.
+   Author: Nora Quinn
+   Category: literature
+   Tags: library, hope, knowledge
+   Score: 0.627844
+
+5. Books let us borrow courage from people who never met us.
+   Author: Rowan Blake
+   Category: literature
+   Tags: books, courage, empathy
+   Score: 0.619789
+
+Wrote semantic-search results: opensearch/semantic-search-results.json

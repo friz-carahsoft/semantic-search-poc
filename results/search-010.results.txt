@@ -1,0 +1,46 @@
+> python scripts/semantic_search_quotes.py "finding humor when things go wrong"
+OpenSearch host: https://localhost:9200
+OpenSearch index: quotes-v1
+Embedding model: all-MiniLM-L6-v2
+Embedding dimension: 384
+Embedding field: quote_embedding
+Connected to OpenSearch: 3.7.0
+Loading embedding model...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 103/103 [00:00<00:00, 22319.35it/s]
+
+================================================================================
+Query: finding humor when things go wrong
+================================================================================
+
+1. My calendar has a sense of humor, but it mostly writes tragedies.
+   Author: Leo Finch
+   Category: humor
+   Tags: calendar, work, time
+   Score: 0.694741
+
+2. A character becomes real when their weakness starts telling the truth.
+   Author: Elena Frost
+   Category: literature
+   Tags: characters, truth, weakness
+   Score: 0.627429
+
+3. Humility begins when certainty leaves enough room for wonder.
+   Author: Lena Cross
+   Category: philosophy
+   Tags: humility, wonder, certainty
+   Score: 0.615769
+
+4. A library is a quiet argument against despair.
+   Author: Nora Quinn
+   Category: literature
+   Tags: library, hope, knowledge
+   Score: 0.612990
+
+5. A wise person changes direction without pretending the old road was useless.
+   Author: Theo Marlow
+   Category: philosophy
+   Tags: change, wisdom, humility
+   Score: 0.612947
+
+Wrote semantic-search results: opensearch/semantic-search-results.json
