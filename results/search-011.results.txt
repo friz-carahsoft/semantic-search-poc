@@ -1,0 +1,46 @@
+> python scripts/semantic_search_quotes.py "serving others as a leader"
+OpenSearch host: https://localhost:9200
+OpenSearch index: quotes-v1
+Embedding model: all-MiniLM-L6-v2
+Embedding dimension: 384
+Embedding field: quote_embedding
+Connected to OpenSearch: 3.7.0
+Loading embedding model...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 103/103 [00:00<00:00, 17633.92it/s]
+
+================================================================================
+Query: serving others as a leader
+================================================================================
+
+1. Leadership is the decision to carry responsibility before carrying authority.
+   Author: Evan Brooks
+   Category: leadership
+   Tags: responsibility, authority, leadership
+   Score: 0.793396
+
+2. The strongest leaders make the next decision easier for everyone else.
+   Author: Nathan Brooks
+   Category: leadership
+   Tags: decisions, clarity, service
+   Score: 0.784034
+
+3. A leader earns speed by first earning alignment.
+   Author: Monica Reed
+   Category: leadership
+   Tags: alignment, speed, execution
+   Score: 0.724196
+
+4. The best leaders protect the room where honest feedback can survive.
+   Author: Leah Bennett
+   Category: leadership
+   Tags: feedback, trust, culture
+   Score: 0.718938
+
+5. A team trusts a leader who explains the mountain before demanding the climb.
+   Author: Grace Porter
+   Category: leadership
+   Tags: teams, trust, clarity
+   Score: 0.706315
+
+Wrote semantic-search results: opensearch/semantic-search-results.json

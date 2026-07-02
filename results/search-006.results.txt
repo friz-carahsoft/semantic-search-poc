@@ -1,0 +1,47 @@
+> python scripts/semantic_search_quotes.py "quotes about courage" --category leadership
+OpenSearch host: https://localhost:9200
+OpenSearch index: quotes-v1
+Embedding model: all-MiniLM-L6-v2
+Embedding dimension: 384
+Embedding field: quote_embedding
+Connected to OpenSearch: 3.7.0
+Loading embedding model...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 103/103 [00:00<00:00, 18615.65it/s]
+
+================================================================================
+Query: quotes about courage
+Category filter: leadership
+================================================================================
+
+1. The strongest leaders make the next decision easier for everyone else.
+   Author: Nathan Brooks
+   Category: leadership
+   Tags: decisions, clarity, service
+   Score: 0.652188
+
+2. Leadership is the decision to carry responsibility before carrying authority.
+   Author: Evan Brooks
+   Category: leadership
+   Tags: responsibility, authority, leadership
+   Score: 0.620496
+
+3. A team trusts a leader who explains the mountain before demanding the climb.
+   Author: Grace Porter
+   Category: leadership
+   Tags: teams, trust, clarity
+   Score: 0.616816
+
+4. The best leaders protect the room where honest feedback can survive.
+   Author: Leah Bennett
+   Category: leadership
+   Tags: feedback, trust, culture
+   Score: 0.616429
+
+5. Vision without listening becomes a speech no one follows.
+   Author: Thomas Vale
+   Category: leadership
+   Tags: vision, listening, alignment
+   Score: 0.602857
+
+Wrote semantic-search results: opensearch/semantic-search-results.json
